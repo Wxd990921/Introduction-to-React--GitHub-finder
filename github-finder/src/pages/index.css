@@ -1,0 +1,97 @@
+:root {
+   --button-color: #c25f07;
+   --link-color: #3fd08d;
+}
+
+button {
+   background-color: var(--button-color);
+   color: white;
+   cursor: pointer;
+   outline: none;
+   border: none;
+   border-radius: 5px;
+}
+
+.container {
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #191823;
+   color: white;
+   flex-direction: column;
+}
+
+.container .input-container {
+   display: flex;
+   width: 400px;
+   column-gap: 12px;
+   margin-top: 24px;
+   height: 40px;
+}
+
+.input-container > * {
+   flex: 1;
+   outline: none;
+   border: none;
+   border-radius: 5px;
+   line-height: 40px;
+}
+
+.input-container input {
+   flex-grow: 3;
+   padding: 8px 12px;
+   font-size: 16px;
+}
+
+.input-container button:disabled {
+   background-color: #e99245 !important;
+}
+
+.container .not-found {
+   margin-top: 8px;
+}
+
+.user-container {
+   display: flex;
+   flex-direction: column;
+   row-gap: 12px;
+   align-items: center;
+}
+
+.user-container .avatar {
+   width: 60px;
+   border-radius: 50%;
+}
+
+.user-container .stats-container {
+   display: flex;
+   column-gap: 36px;
+}
+
+.stats-container .stats {
+   display: inline-flex;
+   flex-direction: column;
+}
+
+.stats .top {
+   text-align: center;
+   color: var(--link-color);
+}
+
+.stats .bottom {
+   color: rgb(213, 208, 208);
+   font-size: 12px;
+   margin-top: 6px;
+}
+
+.user-container .link-to-github {
+   background-color: var(--button-color);
+   color: white;
+   cursor: pointer;
+   outline: none;
+   border: none;
+   border-radius: 20px;
+   padding: 8px 12px;
+   margin-top: 8px;
+}
