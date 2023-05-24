@@ -1,5 +1,5 @@
 import axios from "axios";
-const token = "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";
+const token = "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";
 const options = { headers: { Authorization: `Bearer ${token}` } };
 
 const prefix = "https://api.github.com";
